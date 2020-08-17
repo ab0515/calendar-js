@@ -1,0 +1,28 @@
+body {
+	font-family: sans-serif;
+}
+
+td, th {
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 10px;
+}
+
+.other {
+	margin: 12px 0 12px 0;
+}
+
+#monthYear {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#today-date {
+	font-weight: bold;
+	background-color: #f5cb5c;
+}
+
+#weekends {
+	background: #cfdbd5;
+	color: grey;
+}
