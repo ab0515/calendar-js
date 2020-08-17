@@ -67,11 +67,20 @@ function nextMonth() {
 	showCalendar(curMonth, curYear);
 }
 
+function jumpTo() {
+	curYear = parseInt(selectYear.value);
+	curMonth = parseInt(selectMonth.value);
+	showCalendar(curMonth, curYear);
+}
+
 const MONTHS = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 var today = new Date();
 var curYear = today.getFullYear(), curMonth = today.getMonth(), curDate = today.getDate();
+
+var selectYear = document.getElementById("selectYear");
+var selectMonth = document.getElementById("selectMonth");
 
 const tle = document.getElementById("calendar");
 

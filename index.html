@@ -17,6 +17,19 @@
 			<button id="previous" onclick="previousMonth()">Previous</button>
 			<button id="next" onclick="nextMonth()">Next</button>
 		</div>
+		<div class="jumpTo">
+			<select id="selectMonth" onchange="jumpTo()">
+				<option value=9>October</option>
+				<option value=10>November</option>
+				<option value=11>December</option>
+			</select>
+
+			<select id="selectYear" onchange="jumpTo()">
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+			</select>
+		</div>
 	</body>
 
 	<script src="app.js"></script>
